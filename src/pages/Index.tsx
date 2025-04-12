@@ -14,7 +14,7 @@ const Index = () => {
   }, []);
   return <Layout>
       {/* Hero Section */}
-      <section className="relative py-16 md:py-20 bg-gradient-to-r from-festival-maroon to-festival-red text-white">
+      <section className="relative py-16 md:py-20 bg-gradient-to-r from-festival-maroon to-festival-red text-white bg-amber-300">
         <div className="container mx-auto px-4">
           <div className="md:w-2/3">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">Explore India's Vibrant Festivals</h1>
