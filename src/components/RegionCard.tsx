@@ -9,7 +9,7 @@ interface RegionCardProps {
 const RegionCard = ({ region }: RegionCardProps) => {
   return (
     <Link to={`/region/${region.id}`} className="region-card group block">
-      <div className="relative h-64 overflow-hidden">
+      <div className="relative h-64 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:shadow-xl">
         <img
           src={region.image}
           alt={region.name}

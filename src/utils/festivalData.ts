@@ -1,4 +1,3 @@
-
 export type Region = {
   id: string;
   name: string;
@@ -21,6 +20,7 @@ export type Festival = {
 };
 
 export const regions: Region[] = [
+  // North India
   {
     id: "himachal-uttarakhand",
     name: "Himachal & Uttarakhand",
@@ -62,10 +62,94 @@ export const regions: Region[] = [
     description: "The spiritual and cultural heartland of North India",
     image: "https://images.unsplash.com/photo-1644992429151-748dcacb90a6?w=800&auto=format&fit=crop",
     states: ["Uttar Pradesh"]
+  },
+  
+  // South India
+  {
+    id: "kerala",
+    name: "Kerala",
+    description: "God's own country with rich cultural traditions and temple festivals",
+    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&auto=format&fit=crop",
+    states: ["Kerala"]
+  },
+  {
+    id: "tamil-nadu",
+    name: "Tamil Nadu",
+    description: "Ancient temple festivals and classical cultural celebrations",
+    image: "https://images.unsplash.com/photo-1583395838144-08eec143f8a3?w=800&auto=format&fit=crop",
+    states: ["Tamil Nadu"]
+  },
+  {
+    id: "karnataka",
+    name: "Karnataka",
+    description: "A blend of traditional and contemporary festivals",
+    image: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&auto=format&fit=crop",
+    states: ["Karnataka"]
+  },
+  {
+    id: "andhra-telangana",
+    name: "Andhra Pradesh & Telangana",
+    description: "Vibrant celebrations reflecting the rich Telugu culture",
+    image: "https://images.unsplash.com/photo-1588416499018-d8c621356d2b?w=800&auto=format&fit=crop",
+    states: ["Andhra Pradesh", "Telangana"]
+  },
+  
+  // East & North East India
+  {
+    id: "west-bengal",
+    name: "West Bengal",
+    description: "Home to vibrant Durga Puja and cultural richness",
+    image: "https://images.unsplash.com/photo-1634478689554-732a9d4c9369?w=800&auto=format&fit=crop",
+    states: ["West Bengal"]
+  },
+  {
+    id: "odisha",
+    name: "Odisha",
+    description: "Famous for its ancient temple festivals and tribal celebrations",
+    image: "https://images.unsplash.com/photo-1590077428249-f7a351bf3129?w=800&auto=format&fit=crop",
+    states: ["Odisha"]
+  },
+  {
+    id: "north-east",
+    name: "North East India",
+    description: "Diverse tribal festivals and unique cultural traditions",
+    image: "https://images.unsplash.com/photo-1566841517760-26b387329e3c?w=800&auto=format&fit=crop",
+    states: ["Assam", "Meghalaya", "Nagaland", "Manipur", "Tripura", "Mizoram", "Arunachal Pradesh", "Sikkim"]
+  },
+  
+  // West & Central India
+  {
+    id: "gujarat",
+    name: "Gujarat",
+    description: "Colorful folk festivals and grand Navratri celebrations",
+    image: "https://images.unsplash.com/photo-1601621915196-2621bfb0cd6e?w=800&auto=format&fit=crop",
+    states: ["Gujarat"]
+  },
+  {
+    id: "maharashtra",
+    name: "Maharashtra",
+    description: "Home to Ganesh Chaturthi and vibrant cultural celebrations",
+    image: "https://images.unsplash.com/photo-1629395048132-ae208f320a58?w=800&auto=format&fit=crop",
+    states: ["Maharashtra"]
+  },
+  {
+    id: "goa",
+    name: "Goa",
+    description: "Where traditional Indian festivals meet Portuguese cultural influence",
+    image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&auto=format&fit=crop",
+    states: ["Goa"]
+  },
+  {
+    id: "madhya-pradesh-chhattisgarh",
+    name: "Madhya Pradesh & Chhattisgarh",
+    description: "Tribal festivals and traditional celebrations in the heart of India",
+    image: "https://images.unsplash.com/photo-1588416506339-5067b72a2d79?w=800&auto=format&fit=crop",
+    states: ["Madhya Pradesh", "Chhattisgarh"]
   }
 ];
 
 export const festivals: Festival[] = [
+  // North India Festivals
   {
     id: "holi",
     name: "Holi",
@@ -161,6 +245,96 @@ export const festivals: Festival[] = [
     image: "https://images.unsplash.com/photo-1630493243027-a8faa632f7ec?w=800&auto=format&fit=crop",
     traditions: ["Monastery prayers", "Tibetan food feasts", "Ritual purification", "Cham dances"],
     isFeatured: false
+  },
+  
+  // South India Festivals
+  {
+    id: "pongal",
+    name: "Pongal",
+    description: "Tamil harvest festival celebrating the winter solstice and the beginning of sun's northward journey.",
+    longDescription: "Pongal is a four-day harvest festival celebrated primarily in Tamil Nadu, dedicated to the Sun God. The festival marks the end of the harvest season and the beginning of the Tamil month Thai. The name 'Pongal' refers to the traditional dish of the same name, made from newly harvested rice boiled in milk with jaggery. The festival begins with Bhogi Pongal, when people discard old belongings and clean their homes. The second day, Thai Pongal, is when families gather to cook the traditional Pongal dish in a new clay pot as the sun rises, allowing it to boil over to symbolize abundance. Mattu Pongal, the third day, is dedicated to cattle, which are decorated and worshipped. The final day, Kaanum Pongal, is a time for family gatherings and outings.",
+    date: "January 15-18, 2025",
+    region: "Tamil Nadu",
+    location: "Throughout Tamil Nadu",
+    image: "https://images.unsplash.com/photo-1610085927744-7217728267a6?w=800&auto=format&fit=crop",
+    traditions: ["Cooking Pongal", "Cattle decoration", "Kolam (rangoli) drawing", "Family gatherings"],
+    isFeatured: false
+  },
+  {
+    id: "onam",
+    name: "Onam",
+    description: "Kerala's grand harvest festival celebrating King Mahabali's annual homecoming.",
+    longDescription: "Onam is the most important festival of Kerala, celebrating the mythical King Mahabali's annual visit to his former kingdom. According to legend, King Mahabali was a benevolent ruler under whom Kerala prospered. Lord Vishnu, disguised as a dwarf Brahmin (Vamana), pushed him to the netherworld but granted him permission to visit his people once a year. The festival spans ten days and is marked by elaborate feasts (Onasadya), boat races (Vallam Kali), tiger dances (Pulikali), flower arrangements (Pookalam), and traditional Kathakali dance performances. People wear new clothes (Onakkodi), and homes are decorated with flower rangolis to welcome the king. The feast, served on banana leaves, consists of 26 dishes and is a crucial part of the celebrations.",
+    date: "September 10-21, 2024",
+    region: "Kerala",
+    location: "Throughout Kerala",
+    image: "https://images.unsplash.com/photo-1598739841948-58a26f14094f?w=800&auto=format&fit=crop",
+    traditions: ["Pookalam (flower rangoli)", "Vallam Kali (boat races)", "Onasadya (grand feast)", "Pulikali (tiger dance)"],
+    isFeatured: false
+  },
+  {
+    id: "ugadi",
+    name: "Ugadi",
+    description: "Telugu and Kannada New Year celebrated with symbolic food, decorations, and family gatherings.",
+    longDescription: "Ugadi marks the beginning of the new year for people in Karnataka, Andhra Pradesh, and Telangana. The name is derived from 'Yuga' (age) and 'Adi' (beginning). Homes are cleaned and decorated with mango leaves and rangoli patterns. The day begins with an oil bath, followed by prayers. A special dish called 'Ugadi Pachadi' or 'Bevu Bella' is prepared, which contains six different tastes - sweet, sour, salty, bitter, astringent, and spicy - symbolizing the different experiences of life. People also listen to the Panchanga Sravanam (almanac reading) for predictions about the coming year. New clothes are worn, and families gather for festive meals. Cultural programs, temple visits, and literary discussions are common during this festival.",
+    date: "April 9, 2025",
+    region: "Karnataka, Andhra Pradesh & Telangana",
+    location: "Throughout Karnataka, Andhra Pradesh, and Telangana",
+    image: "https://images.unsplash.com/photo-1590156634102-149c52716b63?w=800&auto=format&fit=crop",
+    traditions: ["Ugadi Pachadi preparation", "Mango leaf decorations", "Panchanga Sravanam", "New clothes"],
+    isFeatured: false
+  },
+  
+  // East India Festivals
+  {
+    id: "durga-puja-bengal",
+    name: "Durga Puja",
+    description: "Bengal's grandest festival celebrating the victory of Goddess Durga over the demon Mahishasura.",
+    longDescription: "Durga Puja is the biggest festival in West Bengal, celebrating the victory of Goddess Durga over the buffalo demon Mahishasura. The 10-day festival transforms Kolkata and other Bengali communities into a massive open-air art exhibition with elaborate pandals (temporary structures) housing intricately crafted Durga idols. Each pandal competes to showcase unique themes and artistic innovations. The festival involves daily rituals, with the last four days being the most important - Saptami, Ashtami, Navami, and Dashami. People dress in new clothes, visit different pandals, enjoy cultural performances, and feast on traditional Bengali cuisine. The festival culminates with Sindoor Khela (married women apply vermilion to the goddess and each other) and a grand immersion procession where the idols are submerged in water.",
+    date: "October 2-6, 2024",
+    region: "West Bengal",
+    location: "Throughout West Bengal, especially Kolkata",
+    image: "https://images.unsplash.com/photo-1634478689554-732a9d4c9369?w=800&auto=format&fit=crop",
+    traditions: ["Pandal hopping", "Dhunuchi dance", "Sindoor Khela", "Idol immersion"],
+    isFeatured: true
+  },
+  {
+    id: "bihu",
+    name: "Bihu",
+    description: "Assam's major harvest festival celebrated three times a year with dance, music, and feasting.",
+    longDescription: "Bihu is the most important festival of Assam, celebrated three times a year. The most prominent is Bohag Bihu or Rongali Bihu, which marks the Assamese New Year in April. During this spring festival, young people perform the Bihu dance, characterized by brisk steps and hand movements. Traditional Bihu songs are sung to the accompaniment of traditional instruments like the dhol, pepa, and gagana. Cattle, considered sacred, are bathed and worshipped. Homes are cleaned, and people wear new clothes and prepare special dishes. Magh Bihu, celebrated in January, marks the end of the harvest season with community feasting and bonfires. Kati Bihu, observed in October during the paddy transplantation season, is more solemn with lamps lit in paddy fields to ward off pests.",
+    date: "April 14-16, 2025 (Bohag Bihu)",
+    region: "North East India",
+    location: "Throughout Assam",
+    image: "https://images.unsplash.com/photo-1629363447921-d0c018dc4490?w=800&auto=format&fit=crop",
+    traditions: ["Bihu dance", "Traditional music", "Cattle worship", "Community feasting"],
+    isFeatured: false
+  },
+  
+  // West India Festivals
+  {
+    id: "ganesh-chaturthi",
+    name: "Ganesh Chaturthi",
+    description: "Maharashtra's grand celebration of Lord Ganesha's birth with 10 days of rituals and festivities.",
+    longDescription: "Ganesh Chaturthi is one of the most popular festivals in Maharashtra, celebrating the birth of the elephant-headed deity, Lord Ganesha. The festival begins with the installation of Ganesha idols in homes and public pandals, elaborately decorated with lights, flowers, and themes. The idol is worshipped for 1.5, 3, 5, 7, or 10 days with daily rituals including aarti (prayer) and offerings of modak (sweet dumplings), which are considered Ganesha's favorite. The public celebrations involve cultural events, music performances, and community feasts. The festival concludes with a grand procession (Visarjan) where the idols are immersed in water bodies amidst chanting, dancing, and drum-beating. In Mumbai, the Visarjan at Girgaum Chowpatty beach is particularly spectacular, with thousands of idols being immersed in the Arabian Sea.",
+    date: "September 7, 2024",
+    region: "Maharashtra",
+    location: "Throughout Maharashtra, especially vibrant in Mumbai and Pune",
+    image: "https://images.unsplash.com/photo-1629395048132-ae208f320a58?w=800&auto=format&fit=crop",
+    traditions: ["Idol installation", "Modak offerings", "Cultural performances", "Visarjan (immersion)"],
+    isFeatured: true
+  },
+  {
+    id: "navratri-gujarat",
+    name: "Navratri",
+    description: "Gujarat's nine nights of devotion to Goddess Durga with vibrant Garba and Dandiya Raas dances.",
+    longDescription: "Navratri in Gujarat is one of the most vibrant and energetic festival celebrations in India. For nine nights, people worship the nine forms of Goddess Durga and celebrate with nightly folk dances - Garba and Dandiya Raas. The Garba dance involves women moving in concentric circles around a lamp or an image of the Goddess, while Dandiya Raas involves dancing with decorated sticks in pairs. The festival transforms Gujarat into a massive dance arena with colorfully dressed participants, live music, and elaborate decorations. Traditional attire includes chaniya choli for women and kediyu for men, with intricate mirror work and colorful embroidery. The festivities continue late into the night, and the entire state seems to be dancing. Special food stalls are set up, offering traditional Gujarati delicacies.",
+    date: "October 3-12, 2024",
+    region: "Gujarat",
+    location: "Throughout Gujarat, especially Vadodara, Ahmedabad, and Surat",
+    image: "https://images.unsplash.com/photo-1601621915196-2621bfb0cd6e?w=800&auto=format&fit=crop",
+    traditions: ["Garba dance", "Dandiya Raas", "Goddess worship", "Traditional attire"],
+    isFeatured: true
   }
 ];
 
