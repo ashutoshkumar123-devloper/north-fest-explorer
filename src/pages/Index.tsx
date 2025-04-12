@@ -17,7 +17,7 @@ const Index = () => {
       <section className="relative py-16 md:py-20 bg-gradient-to-r from-festival-maroon to-festival-red text-white">
         <div className="container mx-auto px-4">
           <div className="md:w-2/3">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">Explore North India's Vibrant Festivals</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">Explore India's Vibrant Festivals</h1>
             <p className="text-lg mb-8 text-gray-100">
               Discover the colorful traditions, celebrations, and cultural events 
               across Northern India's diverse regions
